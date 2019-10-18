@@ -1,2 +1,11 @@
 colorscheme jellybeans
-let g:elm_format_autosave = 1
+"let g:elm_format_autosave = 1
+
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+noremap <Leader>Y "+y
+noremap <Leader>P "+p
+
+" Use fuzzy search and ignore hidden files
+nnoremap <c-p> :Files<cr>
+let $FZF_DEFAULT_COMMAND = 'ag -g "" --hidden'

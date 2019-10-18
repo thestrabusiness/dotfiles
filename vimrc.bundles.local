@@ -1,1 +1,11 @@
-Plug 'elmcast/elm-vim'
+UnPlug 'ctrlp.vim'
+UnPlug 'vim-ruby/vim-ruby'
+UnPlug 'elixir-lang/vim-elixir'
+UnPlug 'pangloss/vim-javascript'
+
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-vinegar'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'Quramy/tsuquyomi'
+

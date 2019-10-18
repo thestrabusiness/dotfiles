@@ -1,3 +1,5 @@
 [user]
   name = Anthony M.
   email = anthony.moffa@thoughtbot.com
+[core]
+  excludesfile = ~/.gitignore_global
