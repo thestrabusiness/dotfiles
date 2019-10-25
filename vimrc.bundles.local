@@ -9,12 +9,11 @@ Plug 'Quramy/tsuquyomi'
 
 " source core config files
 function! s:SourceConfigFilesIn(directory)
-  let directory_splat = '~/' . a:directory . '/*'
+  let directory_splat = '~/dotfiles-local/' . a:directory . '/*'
   for config_file in split(glob(directory_splat), '\n')
-    if filereadable(config_file)
-      execute 'source' config_file
-    endif
+    execute 'source' config_file
   endfor
 endfunction
 
 call s:SourceConfigFilesIn('rcplugins')
+call s:SourceConfigFilesIn('rcfiles')
