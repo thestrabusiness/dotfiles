@@ -5,8 +5,6 @@ UnPlug 'pangloss/vim-javascript'
 
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-vinegar'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'Quramy/tsuquyomi'
 
 " source core config files
