@@ -1,4 +1,4 @@
-colorscheme pablo
+colorscheme jellybeans
 
 noremap <Leader>y "*y
 noremap <Leader>p "*p
