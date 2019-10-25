@@ -1,5 +1,4 @@
-colorscheme jellybeans
-"let g:elm_format_autosave = 1
+colorscheme pablo
 
 noremap <Leader>y "*y
 noremap <Leader>p "*p
