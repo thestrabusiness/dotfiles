@@ -3,9 +3,12 @@ UnPlug 'vim-ruby/vim-ruby'
 UnPlug 'elixir-lang/vim-elixir'
 UnPlug 'pangloss/vim-javascript'
 
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-vinegar'
 Plug 'Quramy/tsuquyomi'
+Plug 'ap/vim-css-color'
+Plug 'alvan/vim-closetag'
 
 " source core config files
 function! s:SourceConfigFilesIn(directory)
