@@ -1,8 +1,0 @@
-colorscheme jellybeans
-
-noremap <Leader>y "*y
-noremap <Leader>p "*p
-noremap <Leader>Y "+y
-noremap <Leader>P "+p
-
-let g:closetag_filenames = '*.html,*.html.erb'
