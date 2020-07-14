@@ -47,10 +47,6 @@ Plug 'tpope/vim-vinegar'
 Plug 'vim-scripts/tComment'
 Plug 'Quramy/tsuquyomi'
 
-if g:has_async
-  Plug 'dense-analysis/ale'
-endif
-
 " source core config files
 function! s:SourceConfigFilesIn(directory)
   let directory_splat = '~/dotfiles/' . a:directory . '/*'
