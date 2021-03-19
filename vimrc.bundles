@@ -45,7 +45,6 @@ Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
 Plug 'vim-scripts/tComment'
-Plug 'Quramy/tsuquyomi'
 
 " source core config files
 function! s:SourceConfigFilesIn(directory)
