@@ -64,5 +64,6 @@ alias standup='open "https://meet.google.com/gvh-gsjj-vhj"'
 #init version managers
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
+eval "$(nodenv init -)"
 
 export PATH="/usr/local/opt/openssl/bin:$PATH"
