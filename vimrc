@@ -163,3 +163,8 @@ augroup vimrcEx
   autocmd BufRead,BufNewFile tmux.conf.local set filetype=tmux
   autocmd BufRead,BufNewFile vimrc.local set filetype=vim
 augroup END
+
+let g:EasyGrepCommand=1
+let g:EasyGrepRecursive=1
+
+nmap <silent> cr <Plug>(abolish-coerce)

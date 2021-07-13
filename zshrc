@@ -49,13 +49,6 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-# HomeTapDev stuff
-export PORTALS_REPOSITORY=$HOME/Projects/home_tap_dev
-export WORKON_HOME=~/.virtualenvs
-export DJANGO_SETTINGS_MODULE="portals.settings.local"
-
-. ${PORTALS_REPOSITORY}/aliases
-
 #aliases
 alias vim="nvim"
 alias reload=". ~/.zshrc"
@@ -67,3 +60,6 @@ eval "$(pyenv init -)"
 eval "$(nodenv init -)"
 
 export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+# Added by Amplify CLI binary installer
+export PATH="$HOME/.amplify/bin:$PATH"
