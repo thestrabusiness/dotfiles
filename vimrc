@@ -110,22 +110,11 @@ if executable('ag')
     nnoremap \ :Ag<SPACE>
   endif
 endif
- 
- 
-" Tab completion
-" will insert tab at beginning of line,
-" will use completion if not at beginning
-set wildmode=list:longest,list:full
-function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<Tab>"
-    else
-        return "\<C-p>"
-    endif
-endfunction
-inoremap <Tab> <C-r>=InsertTabWrapper()<CR>
-inoremap <S-Tab> <C-n>
+
+
+inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#confirm() : "\<Tab>"
+inoremap <expr> <Down> coc#pum#visible() ? coc#pum#next(1)  : "\<Down>"
+inoremap <expr> <Up> coc#pum#visible() ? coc#pum#prev(1) : "\<Up>"
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
