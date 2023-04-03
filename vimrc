@@ -10,6 +10,12 @@ let g:html_indent_tags = 'li\|p'
 " shell for syntax highlighting purposes.
 let g:is_posix = 1
 
+" Config Prettier commands
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
 " Yank and paste with system clipboard
 noremap <Leader>y "*y
 noremap <Leader>p "*p
@@ -157,3 +163,7 @@ let g:EasyGrepCommand=1
 let g:EasyGrepRecursive=1
 
 nmap <silent> cr <Plug>(abolish-coerce)
+
+let g:fold_rspec_foldlevel = 2           " sets initial open/closed state of all folds (open unless nested more than two levels deep)
+let g:fold_rspec_foldclose = 'all'       " closes folds automatically when the cursor is moved out of them (only applies to folds deeper than 'foldlevel')
+let g:fold_rspec_foldminlines = 3

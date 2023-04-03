@@ -7,8 +7,14 @@ Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-html', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
+Plug 'leafOfTree/vim-svelte-plugin', {'do': 'yarn install --frozen-lockfile'}
+Plug 'leafOfTree/vim-svelte-theme', {'do': 'yarn install --frozen-lockfile'}
+Plug 'yaegassy/coc-tailwindcss3', {'do': 'yarn install --frozen-lockfile'}
 
 let g:coc_global_extensions = ['coc-solargraph']
+
+let g:vim_svelte_plugin_load_full_syntax = 1
+let g:vim_svelte_plugin_use_typescript =  1
 
 " don't give |ins-completion-menu| messages.
 set shortmess+=c

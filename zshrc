@@ -53,6 +53,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 alias vim="nvim"
 alias reload=". ~/.zshrc"
 alias standup='open "https://meet.google.com/gvh-gsjj-vhj"'
+alias initnode='eval "$(nodenv init -)"'
 
 #init version managers
 eval "$(rbenv init -)"
@@ -63,3 +64,9 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 # Added by Amplify CLI binary installer
 export PATH="$HOME/.amplify/bin:$PATH"
+
+# Created by `pipx` on 2022-04-08 22:40:48
+export PATH="$PATH:/Users/anthony/.local/bin"
+
+# Prevent autoupdate when running brew install
+export HOMEBREW_NO_AUTO_UPDATE=1

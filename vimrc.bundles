@@ -47,6 +47,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vinegar'
 Plug 'vim-scripts/tComment'
 Plug 'dkprice/vim-easygrep'
+Plug 'tomlion/vim-solidity'
+Plug 'rlue/vim-fold-rspec'
 
 " source core config files
 function! s:SourceConfigFilesIn(directory)
